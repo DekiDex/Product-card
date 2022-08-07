@@ -6,7 +6,7 @@ html {
   *,
   *::before,
   *::after {
-            box-sizing: inherit;
+            box-sizing: border-box;
   }
 
   .pricetwo {
@@ -81,6 +81,12 @@ html {
     bottom: 0;
     margin: auto;
     width: 100%;
+  }
+
+  .priceone {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 200%;
   }
 
   @media screen and (min-width: 280px) {
@@ -165,7 +171,7 @@ html {
     }
 
     .pricetwo {
-      margin-top: .5rem;
+      margin-bottom: 2.3rem;
     }
 
     
