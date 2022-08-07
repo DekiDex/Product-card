@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+            box-sizing: inherit;
+  }
+
+  .pricetwo {
+    margin-left: 1rem;
+  }
+  
+  body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  main {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+  }
+
+  .perfume {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .gabrielle {
+    color: hsl(212, 21%, 14%);
+  }
+
+  .price {
+    display: flex;
+    color: hsl(158, 36%, 37%);
+    align-items: center;
+  }
+
+  .add {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    cursor: pointer;
+  }
+
+  .cart {
+    color: white;
+    margin-left: .6rem;
+  }
+
+  .iconcart {
+    width: 51px;
+    height: auto;
+    color: white; 
+  }
+
+  .attribution {
+    font-size: 60%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 280px) {
+    .image {
+      background-image: url("../images/image-product-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 220px;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    main {
+      flex-direction: column;
+      width: 310px;
+      border-radius: 1rem;
+    }
+
+    .down {
+      padding: 1.5rem;
+      font-size: 90%; 
+    }
+
+    .pricetwo {
+      font-size: 80%;
+    }
+
+    .add {
+      width: 100%;
+    }
+
+    .floral {
+      line-height: 1.3rem;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 900px) {
+    .image {
+      background-image: url("../images/image-product-desktop.jpg");  
+      height: 500px;
+      width: 50%;
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    main {
+      flex-direction: row;
+      width: 660px;
+    }
+
+    .down {
+      width: 50%;
+      padding: 2rem;
+      font-size: 110%;
+      height: 500px;
+      justify-content: space-between;
+    }
+
+    .gabrielle {
+      line-height: 2.2rem;
+      padding-right: 2rem;
+    }
+
+    .floral {
+      line-height: 1.5rem;
+      font-size: 90%;
+      padding-right: 1rem;
+    }
+
+    .perfume {
+      font-size: 70%;
+      margin-top: 0;
+      letter-spacing: .3rem;
+    }
+
+    button {
+      font-size: 85%;
+    }
+
+    .priceone {
+      margin-top: .5rem;
+    }
+
+    .pricetwo {
+      margin-top: .5rem;
+    }
+
+    
+  }
